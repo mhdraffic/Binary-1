@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav1.png">
+	<!-- Author Meta -->
+	<meta name="author" content="codepixer">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Binary Enroll</title>
+
+	<!--
+			Google Font
+			============================================= -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500i" rel="stylesheet">
+
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/themify-icons/0.1.2/css/themify-icons.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body >
+	
+
+	<!-- Start Header Area -->
+	<header id="header">
+		<div class="container">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo3.png" alt="" title="" /></a>
+				</div>
+				<nav id="nav-menu-container">
+						<ul class="nav-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="courses.html">Courses</a></li>
+							<li><a href="services.html">Services</a>
+								<!--ul>
+									<li><a href="elements.html">Elements</a></li>
+								</ul-->
+							</li>
+							<!--li class="menu-has-children"><a href="#">Blog</a>
+								<ul>
+									<li><a href="blog-home.html">Blog Home</a></li>
+									<li><a href="blog-single.html">Blog Details</a></li>
+								</ul>
+							</li-->
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav><!-- #nav-menu-container -->
+			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+	<script type="text/javascript" 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var queryString = new Array();
+		$(function () {
+			if (queryString.length == 0) {
+				if (window.location.search.split('?').length > 1) {
+					var params = window.location.search.split('?')[1].split('&');
+					for (var i = 0; i < params.length; i++) {
+						var key = params[i].split('=')[0];
+						var value = decodeURIComponent(params[i].split('=')[1]);
+						queryString[key] = value;
+					}
+				}
+			}
+			if (queryString["name"] != null) {
+				if(queryString["name"]=='1')
+				{
+				$(".CourseName").text("Advance Java");
+				$("#course").text("Java is one of the most popular and widely used programming language and platform. A platform is an environment that helps to develop and run programs written in any programming language.Java is fast, reliable and secure. From desktop to web applications, scientific supercomputers to gaming consoles, cell phones to the Internet, Java is used in every nook and corner.");
+				$("#S1").attr("href", "Place Ur PDF Location");
+				$(".M1").attr("src","img/Course/Java-Core-and-advance-java.png");
+				}
+				else if(queryString["name"]=='2')
+				{
+				$(".CourseName").text("Python");
+				$("#course").text("Java is one of the most popular and widely used programming language and platform. A platform is an environment that helps to develop and run programs written in any programming language.Java is fast, reliable and secure. From desktop to web applications, scientific supercomputers to gaming consoles, cell phones to the Internet, Java is used in every nook and corner.");
+				$("#S1").attr("href", "Place Ur PDF Location");
+				}
+			}
+		});
+	});
+	</script>
+	<!-- Start Banner Area -->
+	<section class="banner-area relative">
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="about-content col-lg-12">
+					<h1 class="text-white">
+							Course Details
+					</h1>
+				    <div class="link-nav">
+						<span class="box">
+							<a href="courses.html">Courses</a>
+							<i class="lnr lnr-arrow-right"></i>
+							<a class="CourseName" href="courses1.html"></a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rocket-img">
+			<img src="img/rocket.png" alt="">
+		</div>
+	</section>
+	<!-- End Banner Area -->
+
+	<!-- Start contact-page Area -->
+	<section class="contact-page-area section-gap">
+		<div class="container">
+			
+				<div class="col-lg-12">
+					<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+						<div class="row">
+                            <div class="col-lg-6 form-group " style="padding-top:30px;padding-left:50px;text-align:justify;">
+                                    <p style="text-align:center;"><strong class="CourseName"></strong></p>
+                                    <p id="course">
+                                        Course Content
+                                    </p>
+                                </div>
+							<div class="col-lg-6 form-group">
+								<br>
+								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+								 class="common-input mb-20 form-control" required="" type="text">
+
+								<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
+
+								<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'"
+								 class="common-input mb-20 form-control" required="" type="text">
+							
+								<br>
+								<textarea class="common-textarea form-control" name="message" placeholder="Enter Messege" onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Enter Messege'" required=""></textarea>
+							
+								<br>
+								<div class="alert-msg" style="text-align: left;"></div>
+								<button class="primary-btn" >Send Message</button>
+							</div>
+							
+						</div>
+					</form>
+				</div>
+					
+			</div>
+		</div>
+	</section>
+	<!-- End contact-page Area -->
+    <section class="contact-page-area section-gap">
+	    <div class="container">
+            <div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-6">
+						<img height="100" width="100" class ="M1" src=""></img>
+					</div>
+					<div class="col-lg-6">
+							<img height="100" width="100" class ="M1" src=""></img>
+							<a id ="s1" href="#"></a>
+					</div>
+				</div>
+            </div>
+        </div>
+    </section>
+	<!-- Start Footer Area -->
+	<footer class="footer-area section-gap" style="padding-top: 0px !important;padding-bottom: 0px !important">
+		<div class="container">
+			
+			<div class="footer-bottom row align-items-center">
+				<p class="footer-text m-0 col-lg-8 col-md-12"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://bitechchn.com" target="_blank">Binary Technologies</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+				<div class="col-lg-4 col-md-12 footer-social">
+					<a href="https://www.facebook.com/pages/category/Education/Binary-Technologies-337617516729259/"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-behance"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer Area -->
+
+	<!-- ####################### Start Scroll to Top Area ####################### -->
+	<div id="back-top">
+		<a title="Go to Top" href="#"></a>
+	</div>
+	<!-- ####################### End Scroll to Top Area ####################### -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/owl-carousel-thumb.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
