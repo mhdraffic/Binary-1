@@ -1,0 +1,57 @@
+    #loading{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        background:#fff url('Gif/g1.gif') no-repeat center;		
+        background-size:150px;
+        z-index:9999;
+    }
+    #popUpMain{
+        position:fixed;
+        width:100%;
+        height:100%;
+        background: rgba(255,255,255,0.6);
+        z-index:1000;
+
+    }
+    #popup{
+        width:500px;
+        height:150px;
+        background-image:linear-gradient(-50deg, rgb(213, 168, 240), rgb(78, 205, 209));
+        background-size: cover;        
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        box-shadow: 1px 2px 5px 3px white;
+        text-align: center;
+    }
+#newsHeading{
+    transform:translatey(30px);
+    color:whitesmoke;
+}
+#email{
+    transform:translatey(50px);
+}
+.submitId
+{
+    transform:translatey(70px);
+}
+
+/*For Index.html*/
+.Yimg
+	{
+		background-image: url("img/Yimg.png");
+		background-size: 500px 320px;		
+	}
+	.Yimg1
+	{
+		background-image: url("img/Yimg.png");
+		background-size: 500px 600px;		
+	}
+	.slide
+	{
+	padding-top:2.1vh;
+	padding-bottom:7.8vh;
+	/*border:1px solid green;*/
+	}
