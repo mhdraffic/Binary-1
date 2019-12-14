@@ -37,7 +37,15 @@
 {
     transform:translatey(70px);
 }
-
+@media (max-width: 800px) 
+{
+    #popup{
+        width:400px;        
+    }
+    #newsHeading{
+        font-size:34px
+    }
+}
 /*For Index.html*/
 .Yimg
 	{
